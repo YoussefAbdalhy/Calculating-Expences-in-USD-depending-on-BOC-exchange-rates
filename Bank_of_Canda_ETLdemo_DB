@@ -1,0 +1,14 @@
+CREATE DATABASE ETL_demo
+GO
+
+USE ETL_demo
+
+DROP TABLE IF EXISTS Expenses
+
+CREATE TABLE Expenses
+(
+	[date] datetime,
+	expenses_in_USD money,
+	exchange_rate DECIMAL(6,5),
+	expenses_in_CAD money
+)
